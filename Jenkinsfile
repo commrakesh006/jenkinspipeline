@@ -19,7 +19,12 @@ stages{
                 }
             }
         }
-
+    
+    stage('Deploy to stage'){
+        steps{
+         build job :'Deploy-to-staging'   
+        }
+    }
        
     }
 }
